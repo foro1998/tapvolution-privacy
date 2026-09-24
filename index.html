@@ -1,0 +1,316 @@
+<title>Tapvolution Privacy</title>
+<meta name="description" content="Privacy policy for the Tapvolution mobile game.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #0a0f16;
+    --bg-panel: #0f1820;
+    --bg-panel-2: #111c26;
+    --border: #1e2d32;
+    --text: #e7f3ee;
+    --text-dim: #93a8a2;
+    --text-faint: #5f7570;
+    --accent: #6ee7b7;
+    --accent-dim: #3a7d68;
+    --link: #7dd3c9;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="light"]) {
+      --bg: #f4f8f6;
+      --bg-panel: #ffffff;
+      --bg-panel-2: #eef4f1;
+      --border: #dbe6e1;
+      --text: #14211d;
+      --text-dim: #4a5f58;
+      --text-faint: #7c8f88;
+      --accent: #12836a;
+      --accent-dim: #a9d9cb;
+      --link: #0f7a68;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --bg: #f4f8f6;
+    --bg-panel: #ffffff;
+    --bg-panel-2: #eef4f1;
+    --border: #dbe6e1;
+    --text: #14211d;
+    --text-dim: #4a5f58;
+    --text-faint: #7c8f88;
+    --accent: #12836a;
+    --accent-dim: #a9d9cb;
+    --link: #0f7a68;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    padding: 0 20px;
+  }
+
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-block: 56px 80px;
+  }
+
+  header.top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .orb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex: none;
+    background:
+      radial-gradient(circle at 38% 34%, #d3fff0 0%, var(--accent) 46%, var(--accent-dim) 100%);
+    box-shadow: 0 0 18px 2px color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+
+  .top-text h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  .top-text .meta {
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    margin-top: 2px;
+  }
+
+  h1.title {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 1.02rem;
+    max-width: 46ch;
+    margin: 0 0 44px;
+  }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    padding: 16px 18px;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 48px;
+  }
+
+  nav.toc a {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    padding: 3px 0;
+    border-bottom: 1px solid transparent;
+  }
+
+  nav.toc a:hover { color: var(--accent); border-bottom-color: var(--accent-dim); }
+
+  section {
+    margin-bottom: 40px;
+    scroll-margin-top: 20px;
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 14px;
+  }
+
+  h2 .num {
+    font-family: "Source Sans 3", sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border: 1px solid var(--accent-dim);
+    border-radius: 999px;
+    padding: 2px 9px;
+  }
+
+  p { margin: 0 0 14px; max-width: 65ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 1.2em; max-width: 65ch; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  a { color: var(--link); }
+
+  .card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 14px;
+    margin: 18px 0 14px;
+  }
+
+  .service {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+  }
+
+  .service .name {
+    font-weight: 600;
+    font-size: 0.98rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+
+  .service p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  .fill-in {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border: 1px dashed var(--accent-dim);
+    border-radius: 8px;
+    padding: 1px 8px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 0.82rem;
+  }
+
+  @media (max-width: 520px) {
+    .wrap { padding-block: 36px 60px; }
+    nav.toc { gap: 4px 12px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="orb"></div>
+    <div class="top-text">
+      <h1>Tapvolution</h1>
+      <div class="meta">Developed by an independent developer</div>
+    </div>
+  </header>
+
+  <h1 class="title">Privacy Policy</h1>
+  <p class="subtitle">Last updated September 24, 2026. This page explains what data Tapvolution touches, who touches it, and what choices you have.</p>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#overview">Overview</a>
+    <a href="#device">On your device</a>
+    <a href="#services">Third-party services</a>
+    <a href="#ads">Ads &amp; consent</a>
+    <a href="#children">Children</a>
+    <a href="#choices">Your choices</a>
+    <a href="#changes">Changes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">1</span>Overview</h2>
+    <p>Tapvolution is a single-player idle/clicker game. It has <strong>no account system, no login, and no chat or social features</strong> — there is nothing to sign up for and nothing to hand over to play. This policy covers the two places data flows anyway: what the game stores on your own device, and what the third-party advertising service it uses (Google AdMob) collects on its own behalf.</p>
+  </section>
+
+  <section id="device">
+    <h2><span class="num">2</span>What stays on your device</h2>
+    <p>Your progress — tap counts, currency, owned upgrades, unlocked achievements, and similar game state — is saved to a local file on your device only. It is <strong>never uploaded to us or to any server we operate</strong>. We don't have accounts, so we have no way to see it, back it up for you, or connect it to you personally. Uninstalling the app deletes this data, unless your device's own cloud backup system (outside our control) has copied it elsewhere.</p>
+    <p>The game can also show you a <strong>backup code</strong> (Settings → Backup &amp; restore) that you may copy and paste yourself to move your progress to another phone; the code is only ever produced and read on your device. If you turn on <strong>reminder notifications</strong>, they are scheduled locally on your device — no notification service or server is involved.</p>
+  </section>
+
+  <section id="services">
+    <h2><span class="num">3</span>Third-party services</h2>
+    <p>Tapvolution uses one third-party service, Google AdMob, to show optional rewarded video ads. It operates under its own privacy policy, which governs data it collects independently of us:</p>
+    <div class="service-grid">
+      <div class="service">
+        <div class="name"><span class="dot"></span>Google AdMob</div>
+        <p>Shows rewarded video ads that you can choose to watch in exchange for a temporary in-game boost. May collect an advertising identifier (Advertising ID), IP address and device and usage data to select, deliver and measure ads and to prevent fraud. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. We do not receive this data and do not sell it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ads">
+    <h2><span class="num">4</span>Ads &amp; consent</h2>
+    <p>Where required — including for users in the European Economic Area, the UK, and Switzerland — Tapvolution shows a consent form before loading personalized ads, in line with Google's EU User Consent Policy. You can decline personalization there, change your choice later under Settings → Ad privacy settings (shown where it is required), or opt out of interest-based ads or reset your Advertising ID at any time in your device's settings (Settings → Google → Ads).</p>
+    <p>Ads are only shown when you tap the boost button and agree to watch one; the game never interrupts you with ads.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">5</span>Children's privacy</h2>
+    <p>Tapvolution is not directed at children under 13 and we do not knowingly collect personal data from them. If you believe a child has used the app and provided data to a third party, contact us and we will help.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="num">6</span>Your choices</h2>
+    <ul>
+      <li><strong>Ad personalization:</strong> manage or withdraw consent via the in-app consent form (EEA/UK/Switzerland) or your device's ad settings.</li>
+      <li><strong>Local data:</strong> uninstalling the app removes your saved progress from the device.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">7</span>Changes to this policy</h2>
+    <p>If this policy changes, the "last updated" date at the top of this page will change with it. Significant changes will also be reflected in the app's Play Store listing.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">8</span>Contact</h2>
+    <div class="card">
+      <p style="margin:0">Questions about this policy or how Tapvolution handles data can be sent to <a href="mailto:fery1998@seznam.cz">fery1998@seznam.cz</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    Tapvolution — an independent, single-developer game.
+  </footer>
+
+</div>
